@@ -1,4 +1,48 @@
+/* font-family: "RobotoRegular"; */
+@font-face {
+    font-family: "RobotoRegular";
+    src: url("../fonts/roboto/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/roboto/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/roboto/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/roboto/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/roboto/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/roboto/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/roboto/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/roboto/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/roboto/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/roboto/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/roboto/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/roboto/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/roboto/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/roboto/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/roboto/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/roboto/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
 body {
+    color: #eeeeee;
+    font-family: RobotoRegular;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -6,9 +50,34 @@ body {
 }
 .header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
-    background: #7d7e7d; /* Old browsers */
-    background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: #7d7e7d;  Old browsers */
+    /*background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%);  FF3.6-15 */
+    /*background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%);  Chrome10-25,Safari5.1-6 */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );  IE6-9 */
     background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+    height: 65px;
+}
+.header .search {
+    color: #ffffff;
+    position: absolute;
+    margin: 1em 0em 1em 50%;
+}
+.navBar ul {
+    list-style-type: none;
+    background-color: #515151;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+.navBar li {
+    padding: 1em 0;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: thin;
+    border-color: #878787;
+}
+.navBar li:hover {
+    background: linear-gradient(to right, #680000 0%,#7F0000 0%,#9C0000 44%,#C30000 100%);
 }
