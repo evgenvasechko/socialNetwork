@@ -41,6 +41,9 @@
 
 
 body {
+    background-size: cover;
+    background-image: url("img/background.jpg");
+    background-repeat: no-repeat;
     color: #eeeeee;
     font-family: RobotoRegular;
     height: 100%;
@@ -56,18 +59,22 @@ body {
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );  IE6-9 */
     background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     height: 65px;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 0 0 10px 10px;
 }
 .header .search {
     color: #ffffff;
     position: absolute;
-    margin: 1em 0em 1em 50%;
+    margin: 1em 0 1em 55%;
 }
 .navBar ul {
+    text-align: center;
     list-style-type: none;
     background-color: #515151;
-    width: 20%;
+    width: 15%;
     padding: 0;
-    margin: 0;
+    margin: 0 0 0 15%;
 }
 .navBar li {
     padding: 1em 0;
@@ -78,6 +85,17 @@ body {
     border-width: thin;
     border-color: #878787;
 }
+.navBar .advertising {
+    height: 20em;
+}
 .navBar li:hover {
-    background: linear-gradient(to right, #680000 0%,#7F0000 0%,#9C0000 44%,#C30000 100%);
+    /*background: linear-gradient(to right, #680000 0%,#7F0000 0%,#9C0000 44%,#C30000 100%);*/
+    background: linear-gradient(to right, #680000 0%,#7F0000 0%,#7F0000 44%,#680000 100%);
+}
+.footer {
+    background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%);
+    height: 85px;
+    border-radius: 10px 10px 0 0;
+    width: 80%;
+    margin-left: 10%;
 }
