@@ -39,7 +39,6 @@
     font-weight: normal;
 }
 
-
 body {
     background-size: cover;
     background-image: url("img/background.jpg");
@@ -51,6 +50,7 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
 .header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
     /*background: #7d7e7d;  Old browsers */
@@ -63,12 +63,14 @@ body {
     margin-left: 10%;
     border-radius: 0 0 10px 10px;
 }
+
 .header .search {
     color: #ffffff;
     position: absolute;
     margin: 1em 0 1em 55%;
 }
-.navBar ul {
+
+.page .navBar ul {
     text-align: center;
     list-style-type: none;
     background-color: #515151;
@@ -76,7 +78,8 @@ body {
     padding: 0;
     margin: 0 0 0 15%;
 }
-.navBar li {
+
+.page .navBar li {
     padding: 1em 0;
     border-style: solid;
     border-top: none;
@@ -85,17 +88,26 @@ body {
     border-width: thin;
     border-color: #878787;
 }
-.navBar .advertising {
+
+.page .navBar .advertising {
     height: 20em;
 }
-.navBar li:hover {
+
+.page .navBar li:hover {
     /*background: linear-gradient(to right, #680000 0%,#7F0000 0%,#9C0000 44%,#C30000 100%);*/
     background: linear-gradient(to right, #680000 0%,#7F0000 0%,#7F0000 44%,#680000 100%);
 }
+
+.page .content {
+    background-color: #ffffff;
+    padding: 56% 55% 0 0;
+    margin: 0 0 0 30%;
+}
+
 .footer {
     background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%);
     height: 85px;
     border-radius: 10px 10px 0 0;
     width: 80%;
-    margin-left: 10%;
+    margin: -1.5% 0 0 10%;
 }
