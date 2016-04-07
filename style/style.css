@@ -136,7 +136,7 @@ body {
 }
 
 .navBar .advertising {
-    height: 20em;
+
 }
 
 .navBar li:hover {
@@ -146,11 +146,44 @@ body {
 }
 
 .content {
-    margin: 0 0 0 -0.3em;
+    display: inline-block;
+    color: #3F3F3F;
+    vertical-align: top;
+    background-color: #ffffff;
+    width: 55%;
+    text-align: right;
+}
+
+.content .profileInfo {
     display: inline-block;
     vertical-align: top;
-    padding: 26.22em 27%;
-    background-color: #ffffff;
+    width: 310px;
+}
+
+.content .profileInfo a {
+    color: #3F3F3F;
+    text-decoration: none;
+}
+
+.content .profileInfo .name {
+    font-size: 30px;
+}
+
+.content .profileInfo .dateOfBirth, .sex, .location, .personalLinks {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.content .profileInfo .personalLinks a{
+    font-size: 30px;
+}
+
+.content .profilePhoto {
+    height: 600px;
+    width: 400px;
+    overflow: hidden;
+    margin-left: 40px;
+    display: inline-block;
 }
 
 .footer {
