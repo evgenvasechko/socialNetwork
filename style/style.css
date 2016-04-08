@@ -179,8 +179,9 @@ body {
 }
 
 .content .profilePhoto {
-    height: 600px;
-    width: 400px;
+    border-radius: 10px;
+    height: 300px;
+    width: 300px;
     overflow: hidden;
     margin-left: 40px;
     display: inline-block;
