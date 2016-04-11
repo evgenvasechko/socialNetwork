@@ -65,11 +65,11 @@ body {
     border-radius: 0 0 5px 5px;
 }
 
-.header .logo {
+.header .header-logo {
     display: inline-block;
 }
 
-.header .logo img {
+.header .header-logo img {
     /*position: absolute;*/
     vertical-align: super;
     display: inline-block;
@@ -79,7 +79,7 @@ body {
     height: 100px;
 }
 
-.header .logo .textLogo {
+.header .header-logo .header-text-logo {
     font-size: 27px;
     color: #757575;
     display: inline-block;
@@ -88,7 +88,7 @@ body {
     vertical-align: top;
 }
 
-.header .search {
+.header .header-search {
     margin-left: 40%;
     display: inline-block;
     vertical-align: top;
@@ -96,13 +96,13 @@ body {
     position: fixed;
 }
 
-.header .search input {
+.header .header-search input {
     border-style: none;
     padding: 15px 50px;
     border-radius: 20px;
 }
 
-.header .search i {
+.header .header-search i {
     font-size: 20px;
     border-width: 1px;
     border-style: solid;
@@ -111,7 +111,7 @@ body {
     vertical-align: top;
 }
 
-.navBar {
+.navigation {
     display: inline-block;
     text-align: center;
     list-style-type: none;
@@ -121,13 +121,13 @@ body {
     margin: 0 0 0 15%;
 }
 
-.navBar ul {
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navBar li {
+.navigation li {
     padding: 1em 0;
     border-style: solid;
     border-top: none;
@@ -137,11 +137,11 @@ body {
     border-color: #878787;
 }
 
-.navBar .advertising {
+.navigation .advertising {
 
 }
 
-.navBar li:hover {
+.navigation li:hover {
     /*background: linear-gradient(to right, #680000 0%,#7F0000 0%,#9C0000 44%,#C30000 100%);*/
     /*background: radial-gradient(ellipse at center, #680000 0%,#7F0000 0%,#7F0000 44%,#680000 100%);*/
     background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
@@ -156,31 +156,31 @@ body {
     text-align: right;
 }
 
-.content .profileInfo {
+.content .profile-info {
     display: inline-block;
     vertical-align: top;
     width: 310px;
 }
 
-.content .profileInfo a {
+.content .profile-info a {
     color: #3F3F3F;
     text-decoration: none;
 }
 
-.content .profileInfo .name {
+.content .profile-info .name {
     font-size: 30px;
 }
 
-.content .profileInfo .dateOfBirth, .sex, .location, .personalLinks {
+.content .profile-info .date-of-birth, .sex, .location, .personal-links {
     margin-bottom: 10px;
     text-align: left;
 }
 
-.content .profileInfo .personalLinks a{
+.content .profile-info .personal-links a{
     font-size: 30px;
 }
 
-.content .profilePhoto {
+.content .profile-photo {
     border-radius: 10px;
     height: 300px;
     width: 300px;
