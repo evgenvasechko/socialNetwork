@@ -147,7 +147,7 @@ body {
     background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
 }
 
-.content {
+.profile {
     display: inline-block;
     color: #3F3F3F;
     vertical-align: top;
@@ -156,31 +156,31 @@ body {
     text-align: right;
 }
 
-.content .profile-info {
+.profile .profile-info {
     display: inline-block;
     vertical-align: top;
     width: 310px;
 }
 
-.content .profile-info a {
+.profile .profile-info a {
     color: #3F3F3F;
     text-decoration: none;
 }
 
-.content .profile-info .name {
+.profile .profile-info .profile-name {
     font-size: 30px;
 }
 
-.content .profile-info .date-of-birth, .sex, .location, .personal-links {
+.profile .profile-info .profile-birthday, .profile-sex, .profile-location, .profile-links {
     margin-bottom: 10px;
     text-align: left;
 }
 
-.content .profile-info .personal-links a{
+.profile .profile-info .profile-links a{
     font-size: 30px;
 }
 
-.content .profile-photo {
+.profile .profile-photo {
     border-radius: 10px;
     height: 300px;
     width: 300px;
