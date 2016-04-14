@@ -104,8 +104,7 @@ body {
 
 .header .header-search i {
     font-size: 20px;
-    border-width: 1px;
-    border-style: solid;
+    border-style: solid 1px;
     border-radius: 50px;
     padding: 12px;
     vertical-align: top;
@@ -129,12 +128,7 @@ body {
 
 .navigation li {
     padding: 1em 0;
-    border-style: solid;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-width: thin;
-    border-color: #878787;
+    border-bottom: solid thin #878787;
 }
 
 .navigation .advertising {
@@ -157,9 +151,11 @@ body {
 }
 
 .profile .profile-info {
+    position: absolute;
+    left: 32%;
     display: inline-block;
     vertical-align: top;
-    width: 310px;
+    width: 28%;
 }
 
 .profile .profile-info a {
@@ -181,12 +177,27 @@ body {
 }
 
 .profile .profile-photo {
-    border-radius: 10px;
     height: 300px;
     width: 300px;
     overflow: hidden;
-    margin-left: 40px;
+    margin: 10px;
     display: inline-block;
+}
+
+.profile .profile-blog {
+    border: solid #878787 1px;
+    text-align: center;
+    padding: 15px;
+    font-size: 17px;
+}
+
+.profile .profile-blog:hover {
+    background-color: #878787;
+}
+
+.profile .profile-blog i {
+    vertical-align: middle;
+    font-size: 25px;
 }
 
 .footer {
