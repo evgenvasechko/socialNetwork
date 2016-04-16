@@ -65,11 +65,11 @@ body {
     border-radius: 0 0 5px 5px;
 }
 
-.header .header-logo {
+.header-logo {
     display: inline-block;
 }
 
-.header .header-logo img {
+.header-logo img {
     /*position: absolute;*/
     vertical-align: super;
     display: inline-block;
@@ -79,7 +79,7 @@ body {
     height: 100px;
 }
 
-.header .header-logo .header-text-logo {
+.header-logo-text {
     font-size: 27px;
     color: #757575;
     display: inline-block;
@@ -88,23 +88,22 @@ body {
     vertical-align: top;
 }
 
-.header .header-search {
+.header-search {
     margin-left: 40%;
     display: inline-block;
-    vertical-align: top;
     right: 5%;
-    position: fixed;
+    position: absolute;
 }
 
-.header .header-search input {
+.header-search input {
     border-style: none;
     padding: 15px 50px;
     border-radius: 20px;
 }
 
-.header .header-search i {
+.header-search i {
     font-size: 20px;
-    border-style: solid 1px;
+    border: solid 1px #ffffff;
     border-radius: 50px;
     padding: 12px;
     vertical-align: top;
@@ -148,6 +147,8 @@ body {
     background-color: #ffffff;
     width: 55%;
     text-align: right;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .profile .profile-info {
@@ -184,20 +185,50 @@ body {
     display: inline-block;
 }
 
-.profile .profile-blog {
+.profile .profile-blog-head {
     border: solid #878787 1px;
     text-align: center;
     padding: 15px;
     font-size: 17px;
 }
 
-.profile .profile-blog:hover {
+.profile .profile-blog-head:hover {
     background-color: #878787;
 }
 
 .profile .profile-blog i {
     vertical-align: middle;
     font-size: 25px;
+}
+
+.profile-blog-btn button {
+    width: 100%;
+    padding: 5px;
+    margin: 1% 0 0 0;
+    border: solid 1px #878787;
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.profile-blog-post {
+    border: solid 1px #878787;
+    border-left: none;
+    border-right: none;
+    margin: 10px 0 10px 0;
+}
+
+.profile-blog-post .post-text {
+    text-align: left;
+    margin: 10px;
+}
+
+.profile-blog-post .post-photo {
+    height: 450px;
+}
+
+.profile-blog-post .post-photo img {
+    height: 440px;
 }
 
 .footer {
