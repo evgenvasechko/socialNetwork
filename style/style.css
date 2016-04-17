@@ -48,7 +48,9 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .header {
@@ -59,14 +61,18 @@ body {
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );  IE6-9 */
     /*background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background: linear-gradient(to right, rgba(63,63,63,0.01) 0%,rgba(63,63,63,1) 10%,rgba(63,63,63,1) 90%,rgba(63,63,63,0.9) 91%,rgba(0,0,0,0) 100%);
-    padding: 1% 0%;
+    padding: 1% 0;
     width: 80%;
-    margin-left: 10%;
+    align-self: center;
     border-radius: 0 0 5px 5px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-logo {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 .header-logo img {
@@ -89,10 +95,7 @@ body {
 }
 
 .header-search {
-    margin-left: 40%;
-    display: inline-block;
-    right: 5%;
-    position: absolute;
+
 }
 
 .header-search input {
@@ -109,14 +112,19 @@ body {
     vertical-align: top;
 }
 
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 .navigation {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    list-style-type: none;
     background-color: #515151;
     width: 15%;
     padding: 0;
-    margin: 0 0 0 15%;
 }
 
 .navigation ul {
@@ -130,6 +138,11 @@ body {
     border-bottom: solid thin #878787;
 }
 
+.navigation li a {
+    color: #eeeeee;
+    text-decoration: none;
+}
+
 .navigation .advertising {
 
 }
@@ -141,22 +154,24 @@ body {
 }
 
 .profile {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     color: #3F3F3F;
-    vertical-align: top;
     background-color: #ffffff;
     width: 55%;
     text-align: right;
-    overflow-y: scroll;
-    overflow-x: hidden;
+}
+
+.profile-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .profile .profile-info {
-    position: absolute;
-    left: 32%;
-    display: inline-block;
     vertical-align: top;
-    width: 28%;
+    width: 45%;
+    margin: 0 30px;
 }
 
 .profile .profile-info a {
@@ -181,12 +196,18 @@ body {
     height: 300px;
     width: 300px;
     overflow: hidden;
-    margin: 10px;
-    display: inline-block;
+    margin: 10px 25px;
+}
+
+.profile-blog {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile .profile-blog-head {
     border: solid #878787 1px;
+    border-left: none;
+    border-right: none;
     text-align: center;
     padding: 15px;
     font-size: 17px;
@@ -224,6 +245,7 @@ body {
 }
 
 .profile-blog-post .post-photo {
+    text-align: center;
     height: 450px;
 }
 
@@ -239,7 +261,6 @@ body {
     height: 55px;
     border-radius: 5px 5px 0 0;
     width: 80%;
-    margin: 0 10%;
-    position: fixed;
+    align-self: center;
     bottom: 0;
 }
