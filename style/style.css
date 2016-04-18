@@ -39,6 +39,11 @@
     font-weight: normal;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
     background-size: cover;
     background-image: url("img/background.jpg");
@@ -46,11 +51,13 @@ body {
     color: #eeeeee;
     font-family: RobotoRegular;
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 .header {
@@ -61,9 +68,10 @@ body {
     /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );  IE6-9 */
     /*background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     background: linear-gradient(to right, rgba(63,63,63,0.01) 0%,rgba(63,63,63,1) 10%,rgba(63,63,63,1) 90%,rgba(63,63,63,0.9) 91%,rgba(0,0,0,0) 100%);
-    padding: 1% 0;
     width: 80%;
+    padding: 30px 0;
     align-self: center;
+    align-items: center;
     border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-between;
@@ -76,13 +84,11 @@ body {
 }
 
 .header-logo img {
-    /*position: absolute;*/
-    vertical-align: super;
-    display: inline-block;
-    margin: 0 0 -3% 0;
-    padding: 0;
-    top: 0;
     height: 100px;
+}
+
+.header-logo a {
+    text-decoration: none;
 }
 
 .header-logo-text {
@@ -118,7 +124,7 @@ body {
     justify-content: center;
 }
 
-.navigation {
+.content-navigation {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -127,84 +133,84 @@ body {
     padding: 0;
 }
 
-.navigation ul {
+.content-navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-.navigation li {
+.content-navigation li {
     padding: 1em 0;
     border-bottom: solid thin #878787;
 }
 
-.navigation li a {
+.content-navigation li a {
     color: #eeeeee;
     text-decoration: none;
 }
 
-.navigation .advertising {
+.content-navigation-advertising {
 
 }
 
-.navigation li:hover {
+.content-navigation li:hover {
     /*background: linear-gradient(to right, #680000 0%,#7F0000 0%,#9C0000 44%,#C30000 100%);*/
     /*background: radial-gradient(ellipse at center, #680000 0%,#7F0000 0%,#7F0000 44%,#680000 100%);*/
     background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
 }
 
-.profile {
-    display: flex;
-    flex-direction: column;
+.content-profile {
     color: #3F3F3F;
     background-color: #ffffff;
     width: 55%;
     text-align: right;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.profile-about {
+.content-profile-about {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.profile .profile-info {
+.content-profile-info {
     vertical-align: top;
     width: 45%;
     margin: 0 30px;
 }
 
-.profile .profile-info a {
+.content-profile-info a {
     color: #3F3F3F;
     text-decoration: none;
 }
 
-.profile .profile-info .profile-name {
+.content-profile-name {
     font-size: 30px;
 }
 
-.profile .profile-info .profile-birthday, .profile-sex, .profile-location, .profile-links {
+.content-profile-birthday, .content-profile-sex, .content-profile-location, .content-profile-links {
     margin-bottom: 10px;
     text-align: left;
 }
 
-.profile .profile-info .profile-links a{
+.content-profile-links a{
     font-size: 30px;
 }
 
-.profile .profile-photo {
+.content-profile-photo {
     height: 300px;
     width: 300px;
     overflow: hidden;
     margin: 10px 25px;
 }
 
-.profile-blog {
+.content-profile-blog {
     display: flex;
     flex-direction: column;
 }
 
-.profile .profile-blog-head {
+.content-profile-blog-head {
     border: solid #878787 1px;
     border-left: none;
     border-right: none;
@@ -213,16 +219,16 @@ body {
     font-size: 17px;
 }
 
-.profile .profile-blog-head:hover {
-    background-color: #878787;
+.content-profile-blog-head:hover {
+    background-color: #B2B2B2;
 }
 
-.profile .profile-blog i {
+.content-profile-blog i {
     vertical-align: middle;
     font-size: 25px;
 }
 
-.profile-blog-btn button {
+.content-profile-blog-btn button {
     width: 100%;
     padding: 5px;
     margin: 1% 0 0 0;
@@ -232,25 +238,25 @@ body {
     color: #000000;
 }
 
-.profile-blog-post {
+.content-profile-blog-post {
     border: solid 1px #878787;
     border-left: none;
     border-right: none;
     margin: 10px 0 10px 0;
 }
 
-.profile-blog-post .post-text {
+.content-profile-blog-post-text {
     text-align: left;
     margin: 10px;
 }
 
-.profile-blog-post .post-photo {
+.content-profile-blog-post-photo {
     text-align: center;
-    height: 450px;
 }
 
-.profile-blog-post .post-photo img {
-    height: 440px;
+.content-profile-blog-post-photo img {
+    width: 590px;
+    margin: 20px 0 20px 0;
 }
 
 .footer {
@@ -258,7 +264,7 @@ body {
     /*background: linear-gradient(to bottom,  #0e0e0e 0%,#7d7e7d 100%);*/
     /*background: linear-gradient(to bottom, rgba(112,112,112,1) 0%,rgba(183,183,183,1) 50%,rgba(255,255,255,1) 100%,rgba(255,255,255,1) 100%);*/
     background: linear-gradient(to right, rgba(0,0,0,0.01) 0%,rgba(0,0,0,1) 10%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 90%,rgba(0,0,0,0) 100%);
-    height: 55px;
+    height: 110px;
     border-radius: 5px 5px 0 0;
     width: 80%;
     align-self: center;
