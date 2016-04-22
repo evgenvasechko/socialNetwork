@@ -46,7 +46,7 @@ html {
 
 body {
     background-size: cover;
-    background-image: url("img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     color: #eeeeee;
     font-family: RobotoRegular;
@@ -258,6 +258,58 @@ body {
     width: 590px;
     margin: 20px 0 20px 0;
 }
+
+
+
+.enter {
+    margin: 3% 3% 25% auto;
+}
+
+.enter-form {
+    background-color: rgba(125, 126, 127, 0.6);
+}
+
+.enter-form-title {
+    padding: 30px 20px;
+}
+
+.enter-form-field {
+    margin: 10px 20px;
+}
+
+.enter-form-field input {
+    border: solid 1px #cccccc;
+    border-radius: 15px;
+    background-color: rgba(125, 126, 127, 0);
+    padding: 5px;
+    color: #cccccc;
+    display: block;
+    margin: 10px auto;
+    width: 99%;
+}
+
+.enter-form-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.enter-form-buttons button {
+    color: #eeeeee;
+    border-top: solid 1px #ffffff;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 1em;
+    margin: 20px 0 0 0;
+    flex: 1 1 50%;
+    background-color: rgba(125, 126, 127, 0);
+}
+
+.enter-form-buttons button:hover {
+    background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
+}
+
 
 .footer {
     /*background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%);*/
