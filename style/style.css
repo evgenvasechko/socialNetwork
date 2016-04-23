@@ -279,13 +279,18 @@ body {
 
 .enter-form-field input {
     border: solid 1px #cccccc;
-    border-radius: 15px;
+    border-radius: 20px;
     background-color: rgba(125, 126, 127, 0);
-    padding: 5px;
+    padding: 10px;
     color: #cccccc;
     display: block;
     margin: 10px auto;
-    width: 99%;
+    width: 90%;
+}
+
+.enter-form-field a {
+    text-decoration: none;
+    color: #cccccc;
 }
 
 .enter-form-buttons {
@@ -309,6 +314,7 @@ body {
 .enter-form-buttons button:hover {
     background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
 }
+
 
 
 .footer {
