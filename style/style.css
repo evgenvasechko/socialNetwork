@@ -260,24 +260,37 @@ body {
 }
 
 
-
-.enter {
-    margin: 3% 3% 25% auto;
+.content-about {
+    padding: 25px;
+    margin: 50px;
+    flex: 1 1 60%;
+    color: #ffffff;
 }
 
-.enter-form {
+.content-about a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.content-enter {
+    margin: 50px;
+    flex: 0 1 30%;
+}
+
+.content-enter-form {
     background-color: rgba(125, 126, 127, 0.6);
 }
 
-.enter-form-title {
+.content-enter-form-title {
+    font-size: 20px;
     padding: 30px 20px;
 }
 
-.enter-form-field {
+.content-enter-form-field {
     margin: 10px 20px;
 }
 
-.enter-form-field input {
+.content-enter-form-field input {
     border: solid 1px #cccccc;
     border-radius: 20px;
     background-color: rgba(125, 126, 127, 0);
@@ -288,18 +301,18 @@ body {
     width: 90%;
 }
 
-.enter-form-field a {
+.content-enter-form-field a {
     text-decoration: none;
     color: #cccccc;
 }
 
-.enter-form-buttons {
+.content-enter-form-buttons {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-.enter-form-buttons button {
+.content-enter-form-buttons button {
     color: #eeeeee;
     border-top: solid 1px #ffffff;
     border-left: none;
@@ -311,7 +324,7 @@ body {
     background-color: rgba(125, 126, 127, 0);
 }
 
-.enter-form-buttons button:hover {
+.content-enter-form-buttons button:hover {
     background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
 }
 
