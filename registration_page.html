@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <title>Registration</title>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="header-logo">
+        <a href="#">
+            <img src="img/squareLogo1.png" alt=""/>
+            <p class="header-logo-text">WHEELS.BY</p>
+        </a>
+    </div>
+    <div class="header-search">
+        <input type="text" value="Input here..">
+        <i class="fa fa-search"></i>
+    </div>
+</div>
+
+<div class="content">
+    <form action="" id="content-registration">
+
+        <div>
+            <label for="content-registration" class="content-registration-field">
+                Name:
+                <input type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value=""/>
+            </label>
+
+            <label for="content-registration" class="content-registration-field">
+                Surname:
+                <input type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value=""/>
+            </label>
+        </div>
+
+        <div>
+            <label for="content-registration" class="content-registration-field">
+                Date of birth:
+                <input type="date" value=""/>
+            </label>
+
+            <label for="content-registration" class="content-registration-field">
+                Sex:
+                <input type="text" list="sex" value=""/>
+                <datalist id="sex">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </datalist>
+            </label>
+        </div>
+
+        <div>
+            <label for="content-registration" class="content-registration-field">
+                City:
+                <input type="text" autocapitalize="words" autocomplete="off" autocorrect="off" value=""/>
+            </label>
+
+            <label for="content-registration" class="content-registration-field">
+                Phone number:
+                <input type="tel" autocorrect="off" autocomplete="tel" value=""/>
+            </label>
+        </div>
+
+        <div>
+            <label for="content-registration" class="content-registration-field">
+                E-mail:
+                <input type="email" autocapitalize="off" autocomplete="email" autocorrect="off"  value=""/>
+            </label>
+
+            <label for="content-registration">
+                Avatar image:
+                <input type="file"/>
+            </label>
+        </div>
+
+        <div>
+            <label for="content-registration" class="content-registration-field">
+                Personal links:
+                <input type="text" value="Vkontakte"/>
+                <input type="text" value="Odnoklassniki"/>
+                <input type="text" value="Facebook"/>
+                <input type="text" value="Twitter"/>
+                <input type="text" value="Skype"/>
+                <input type="text" value="Instagram"/>
+            </label>
+        </div>
+
+        <div>
+            <label for="content-registration">
+                <input type="button" value="Submit" class="content-registration-submit"/>
+            </label>
+        </div>
+
+    </form>
+</div>
+
+<div class="footer">
+
+</div>
+
+</body>
+</html>
