@@ -16,85 +16,88 @@
             <p class="header-logo-text">WHEELS.BY</p>
         </a>
     </div>
-    <div class="header-search">
-        <input type="text" value="Input here..">
-        <i class="fa fa-search"></i>
-    </div>
 </div>
 
 <div class="content">
-    <form action="" id="content-registration">
-
+    <form action="" name="content-registration" class="content-registration">
         <div>
-            <label for="content-registration" class="content-registration-field">
-                Name:
-                <input type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value=""/>
-            </label>
+            <span>
+                <label for="name" class="content-registration-field">Name:</label>
+                <input id="name" type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value="" placeholder="Enter name"/>
+            </span>
 
-            <label for="content-registration" class="content-registration-field">
-                Surname:
-                <input type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value=""/>
-            </label>
+            <span>
+                <label for="surname" class="content-registration-field">Surname:</label>
+                <input id="surname" type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value="" placeholder="Enter surname"/>
+            </span>
         </div>
 
         <div>
-            <label for="content-registration" class="content-registration-field">
-                Date of birth:
-                <input type="date" value=""/>
-            </label>
+            <span>
+                <label for="birthday" class="content-registration-field">Date of birth:</label>
+                <input id="birthday" type="date" value=""/>
+            </span>
 
-            <label for="content-registration" class="content-registration-field">
-                Sex:
-                <input type="text" list="sex" value=""/>
-                <datalist id="sex">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </datalist>
-            </label>
+            <span>
+                <span>Sex:</span>
+                <label for="male">Male</label><input type="radio" name="sex" value="Male" id="male" class="sex"/>
+                <label for="female">Female</label><input type="radio" name="sex" value="Female" id="female" class="sex"/>
+            </span>
         </div>
 
         <div>
-            <label for="content-registration" class="content-registration-field">
-                City:
-                <input type="text" autocapitalize="words" autocomplete="off" autocorrect="off" value=""/>
-            </label>
+            <span>
+                <label for="city" class="content-registration-field">City:</label>
+                <input id="city" type="text" autocapitalize="words" autocomplete="off" autocorrect="off" value="" placeholder="Enter city"/>
+            </span>
 
-            <label for="content-registration" class="content-registration-field">
-                Phone number:
-                <input type="tel" autocorrect="off" autocomplete="tel" value=""/>
-            </label>
+            <span>
+                <label for="tel" class="content-registration-field">Phone number:</label>
+                <input id="tel" type="tel" autocorrect="off" autocomplete="tel" value="" placeholder="Enter phone number"/>
+            </span>
         </div>
 
         <div>
-            <label for="content-registration" class="content-registration-field">
-                E-mail:
-                <input type="email" autocapitalize="off" autocomplete="email" autocorrect="off"  value=""/>
-            </label>
+            <span>
+                <label for="email" class="content-registration-field">E-mail:</label>
+                <input id="email" type="email" autocapitalize="off" autocomplete="email" autocorrect="off"  value="" placeholder="Enter email"/>
+            </span>
 
-            <label for="content-registration">
-                Avatar image:
-                <input type="file"/>
-            </label>
+            <span>
+                <label for="avatar">Avatar image:</label>
+                <input id="avatar" type="file"/>
+            </span>
         </div>
 
         <div>
-            <label for="content-registration" class="content-registration-field">
-                Personal links:
-                <input type="text" value="Vkontakte"/>
-                <input type="text" value="Odnoklassniki"/>
-                <input type="text" value="Facebook"/>
-                <input type="text" value="Twitter"/>
-                <input type="text" value="Skype"/>
-                <input type="text" value="Instagram"/>
-            </label>
+            <span>
+                <label for="password" class="content-registration-field">Password:</label>
+                <input id="password" type="password" value="" placeholder="Enter password"/>
+            </span>
+
+            <span>
+                <label for="password-confirm" class="content-registration-field">Confirm password:</label>
+                <input id="password-confirm" type="password" value="" placeholder="Confirm password"/>
+            </span>
         </div>
 
         <div>
-            <label for="content-registration">
-                <input type="button" value="Submit" class="content-registration-submit"/>
-            </label>
+            <span>
+                <label for="link" class="content-registration-field">Personal links:</label>
+                <input id="link" type="text" placeholder="Vkontakte"/>
+                <input id="link" type="text" placeholder="Odnoklassniki"/>
+                <input id="link" type="text" placeholder="Facebook"/>
+            </span>
+            <span>
+                <input id="link" type="text" placeholder="Twitter"/>
+                <input id="link" type="text" placeholder="Skype"/>
+                <input id="link" type="text" placeholder="Instagram"/>
+            </span>
         </div>
 
+        <div>
+            <input type="button" value="Submit" class="content-registration-submit"/>
+        </div>
     </form>
 </div>
 

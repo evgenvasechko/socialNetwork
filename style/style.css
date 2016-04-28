@@ -278,7 +278,7 @@ body {
 }
 
 .content-enter-form {
-    background-color: rgba(125, 126, 127, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .content-enter-form-title {
@@ -329,45 +329,41 @@ body {
 }
 
 
-#content-registration {
-    overflow: auto;
-    background-color: rgba(125, 126, 127, 0.6);
-    width: 75%;
-}
-
-#content-registration div {
+.content-registration {
     display: flex;
-    text-align: center;
-}
-
-#content-registration div label {
-    flex: 1 1 40%;
-    padding: 10px;
-}
-
-.content-registration-field {
-
-}
-
-.content-registration-field input {
-    border: solid 1px #cccccc;
-    border-radius: 20px;
-    background-color: rgba(125, 126, 127, 0);
-    padding: 10px;
-    color: #cccccc;
-    display: block;
-    margin: 5px auto;
+    justify-content: space-between;
+    flex-direction: column;
     width: 75%;
-    height: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
 }
 
-.content-registration-submit {
-    background: none;
-    border: solid 1px #eeeeee;
-    padding: 10px 50px;
-    color: #ffffff;
-    border-radius: 50px;
+
+.content-registration div {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
+
+.content-registration div span {
+    display: flex;
+    flex: 0 1 50%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.content-registration div input {
+    display: block;
+    border: solid 1px #eeeeee;
+    border-radius: 50px;
+    background: none;
+    padding: 10px 5px;
+    width: 300px;
+    color: #eeeeee;
+    margin-top: 10px;
+}
+
 
 
 .footer {
