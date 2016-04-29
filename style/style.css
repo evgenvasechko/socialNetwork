@@ -75,6 +75,7 @@ body {
     border-radius: 0 0 5px 5px;
     display: flex;
     justify-content: space-between;
+    flex: 2 1 20%;
 }
 
 .header-logo {
@@ -122,6 +123,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    flex: 7 0 80%;
 }
 
 .content-navigation {
@@ -260,6 +262,55 @@ body {
 }
 
 
+
+.content-friends {
+    background-color: #ffffff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #3F3F3F;
+    width: 55%;
+}
+
+.content-friends-unit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: solid 1px #3f3f3f;
+}
+
+.content-friends-unit-photo {
+    flex: 1 1 33%;
+}
+
+.content-friends-unit-photo img {
+    width: 200px;
+    height: 200px;
+}
+
+.content-friends-unit-info {
+    flex: 2 1 66%;
+}
+
+.content-friends-unit-info a {
+    color: #3F3F3F;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.content-friends-unit-info-actions {
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    text-decoration: underline;
+}
+
+.content-friends-unit-info:hover .content-friends-unit-info-actions{
+    visibility: visible;
+}
+
+
+
 .content-about {
     padding: 25px;
     margin: 50px;
@@ -312,6 +363,11 @@ body {
     justify-content: center;
 }
 
+.content-enter-form-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
 .content-enter-form-buttons button {
     color: #eeeeee;
     border-top: solid 1px #ffffff;
@@ -329,6 +385,7 @@ body {
 }
 
 
+
 .content-registration {
     display: flex;
     justify-content: space-between;
@@ -337,7 +394,6 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
 }
-
 
 .content-registration div {
     margin-top: 25px;
@@ -376,4 +432,5 @@ body {
     width: 80%;
     align-self: center;
     bottom: 0;
+    flex: 1 1 10%;
 }
