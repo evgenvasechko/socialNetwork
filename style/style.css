@@ -474,17 +474,16 @@ body {
 
 
 .content-gallery {
-    flex: 0 1 55%;
-    column-count: 3;
+    column-count: 4;
     column-gap: 0;
+    flex: 0 1 55%;
     overflow-y: auto;
     overflow-x: hidden;
     background-color: rgba(0,0,0, .5);
 }
 
 .content-gallery img {
-    break-inside: avoid;
-    padding: 5px;
+    margin: 10px;
     overflow: hidden;
     height: 200px;
 }
