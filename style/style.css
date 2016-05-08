@@ -133,7 +133,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #515151;
+    background-color: rgba(0,0,0,.7);
     width: 15%;
     padding: 0;
 }
@@ -168,7 +168,7 @@ body {
 
 .content-profile {
     color: #3F3F3F;
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,.8);
     width: 55%;
     text-align: right;
     overflow-y: auto;
@@ -269,7 +269,7 @@ body {
 
 
 .content-friends {
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,.8);
     overflow-y: auto;
     overflow-x: hidden;
     color: #3F3F3F;
@@ -326,7 +326,7 @@ body {
 
 
 .content-messages {
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,.8);
     color: #3f3f3f;
     overflow-x: hidden;
     overflow-y: auto;
@@ -411,7 +411,7 @@ body {
 
 
 .content-communities {
-    background-color: #ffffff;
+    background-color: rgba(255,255,255,.8);
     overflow-y: auto;
     overflow-x: hidden;
     color: #3F3F3F;
@@ -479,13 +479,70 @@ body {
     flex: 0 1 55%;
     overflow-y: auto;
     overflow-x: hidden;
-    background-color: rgba(0,0,0, .5);
+    background-color: rgba(255,255,255,.8);
 }
 
 .content-gallery img {
     margin: 10px;
     overflow: hidden;
     height: 200px;
+}
+
+
+
+.content-videos {
+    background-color: rgba(255,255,255,.8);
+    width: 55%;
+    color: #3f3f3f;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content-videos-unit {
+    border-bottom: solid 1px #878787;
+    margin: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-videos-unit-player {
+    background-color: #000000;
+    width: 700px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.content-videos-unit-info {}
+
+.content-videos-unit-info-name {
+    text-align: center;
+    display: block;
+    font-size: 23px;
+    margin: 5px;
+}
+
+.content-videos-unit-info-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 5px;
+    color: #000000;
+}
+
+.content-videos-unit-info-actions span {
+    flex: 1 1 15%;
+    margin: 5px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content-videos-unit-info-actions span:hover {
+    background: linear-gradient(to right, rgba(132,26,26,0.01) 1%,rgba(132,26,26,1) 50%,rgba(125,185,232,0) 100%);
+}
+
+.content-videos-unit-info-actions i {
+    margin: 0 10px 0 0;
 }
 
 
