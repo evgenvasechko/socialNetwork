@@ -20,85 +20,80 @@
 
 <div class="content">
     <form action="" name="content-registration" class="content-registration">
-        <div>
-            <span>
-                <label for="name" class="content-registration-field">Name:</label>
-                <input id="name" type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value="" placeholder="Enter name"/>
-            </span>
 
-            <span>
-                <label for="surname" class="content-registration-field">Surname:</label>
-                <input id="surname" type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value="" placeholder="Enter surname"/>
-            </span>
+        <div class="content-registration-form">
+            <div>
+                <p class="content-registration-field">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value="" placeholder="Enter name"/>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="surname" class="content-registration-field">Surname:</label>
+                    <input id="surname" type="text" autocapitalize="words" autocomplete="name" autocorrect="off" value="" placeholder="Enter surname"/>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="birthday" class="content-registration-field">Date of birth:</label>
+                    <input id="birthday" type="date" value=""/>
+                </p>
+
+                <p class="content-registration-field">
+                    <span>Sex:</span>
+                    <span class="sex"><label for="male">Male</label><input type="radio" name="sex" value="Male" id="male" class="sex"/></span>
+                    <span class="sex"><label for="female">Female</label><input type="radio" name="sex" value="Female" id="female" class="sex"/></span>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="city" class="content-registration-field">City:</label>
+                    <input id="city" type="text" autocapitalize="words" autocomplete="off" autocorrect="off" value="" placeholder="Enter city"/>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="tel" class="content-registration-field">Phone number:</label>
+                    <input id="tel" type="tel" autocorrect="off" autocomplete="tel" value="" placeholder="Enter phone number"/>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="email" class="content-registration-field">E-mail:</label>
+                    <input id="email" type="email" autocapitalize="off" autocomplete="email" autocorrect="off"  value="" placeholder="Enter email"/>
+                </p>
+            </div>
+
+            <div>
+                <p class="content-registration-field">
+                    <label for="avatar">Avatar image:</label>
+                    <input id="avatar" type="file"/>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="password" class="content-registration-field">Password:</label>
+                    <input id="password" type="password" value="" placeholder="Enter password"/>
+                </p>
+
+                <p class="content-registration-field">
+                    <label for="password-confirm" class="content-registration-field">Confirm password:</label>
+                    <input id="password-confirm" type="password" value="" placeholder="Confirm password"/>
+                </p>
+
+                <p class="content-registration-field">
+                        <label for="link" class="content-registration-field">Personal links:</label>
+                        <input id="link" type="text" placeholder="Vkontakte"/>
+                        <input id="link" type="text" placeholder="Odnoklassniki"/>
+                        <input id="link" type="text" placeholder="Facebook"/>
+                        <input id="link" type="text" placeholder="Twitter"/>
+                        <input id="link" type="text" placeholder="Skype"/>
+                        <input id="link" type="text" placeholder="Instagram"/>
+                </p>
+            </div>
         </div>
 
-        <div>
-            <span>
-                <label for="birthday" class="content-registration-field">Date of birth:</label>
-                <input id="birthday" type="date" value=""/>
-            </span>
-
-            <span>
-                <span>Sex:</span>
-                <label for="male">Male</label><input type="radio" name="sex" value="Male" id="male" class="sex"/>
-                <label for="female">Female</label><input type="radio" name="sex" value="Female" id="female" class="sex"/>
-            </span>
-        </div>
-
-        <div>
-            <span>
-                <label for="city" class="content-registration-field">City:</label>
-                <input id="city" type="text" autocapitalize="words" autocomplete="off" autocorrect="off" value="" placeholder="Enter city"/>
-            </span>
-
-            <span>
-                <label for="tel" class="content-registration-field">Phone number:</label>
-                <input id="tel" type="tel" autocorrect="off" autocomplete="tel" value="" placeholder="Enter phone number"/>
-            </span>
-        </div>
-
-        <div>
-            <span>
-                <label for="email" class="content-registration-field">E-mail:</label>
-                <input id="email" type="email" autocapitalize="off" autocomplete="email" autocorrect="off"  value="" placeholder="Enter email"/>
-            </span>
-
-            <span>
-                <label for="avatar">Avatar image:</label>
-                <input id="avatar" type="file"/>
-            </span>
-        </div>
-
-        <div>
-            <span>
-                <label for="password" class="content-registration-field">Password:</label>
-                <input id="password" type="password" value="" placeholder="Enter password"/>
-            </span>
-
-            <span>
-                <label for="password-confirm" class="content-registration-field">Confirm password:</label>
-                <input id="password-confirm" type="password" value="" placeholder="Confirm password"/>
-            </span>
-        </div>
-
-        <div>
-            <span>
-                <label for="link" class="content-registration-field">Personal links:</label>
-                <input id="link" type="text" placeholder="Vkontakte"/>
-                <input id="link" type="text" placeholder="Odnoklassniki"/>
-                <input id="link" type="text" placeholder="Facebook"/>
-            </span>
-            <span>
-                <input id="link" type="text" placeholder="Twitter"/>
-                <input id="link" type="text" placeholder="Skype"/>
-                <input id="link" type="text" placeholder="Instagram"/>
-            </span>
-        </div>
-
-        <div>
+        <div class="content-registration-submit">
             <input type="button" value="Submit" class="content-registration-submit"/>
         </div>
+
     </form>
+
 </div>
 
 <div class="footer">
