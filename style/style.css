@@ -154,6 +154,22 @@ body {
 
 
 
+.advertising {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    height: 85%;
+}
+
+.advertising-block {
+    height: 365px;
+    margin: 10px;
+    opacity: 0.9;
+}
+
+
+
 .content-navigation {
     display: flex;
     flex-direction: column;
@@ -282,7 +298,7 @@ body {
     justify-content: space-around;
 }
 
-.content-profile-blog-post-actions span {
+.content-profile-blog-post-actions-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -293,11 +309,15 @@ body {
     border-radius: 5px;
 }
 
-.content-profile-blog-post-actions span i {
-    margin-right: 15px;
+.content-profile-blog-post-actions-btn span {
+    margin-left: 10px;
 }
 
-.content-profile-blog-post-actions span:hover {
+.content-profile-blog-post-actions-btn i {
+    margin-right: 10px;
+}
+
+.content-profile-blog-post-actions-btn:hover {
     color: rgba(255,255,255, 1);
     background-color: rgba(0,0,0, .3);
 }
@@ -500,7 +520,7 @@ body {
     width: 100%;
 }
 
-.content-news-unit-actions span {
+.content-news-unit-actions-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -511,12 +531,16 @@ body {
     border-radius: 5px;
 }
 
-.content-news-unit-actions span:hover {
+.content-news-unit-actions-btn:hover {
     color: rgba(255,255,255, 1);
     background-color: rgba(0,0,0, .3);
 }
 
-.content-news-unit-actions i {
+.content-news-unit-actions-btn span {
+    margin-left: 10px;
+}
+
+.content-news-unit-actions-btn i {
     margin: 0 10px 0 0;
 }
 
@@ -566,7 +590,7 @@ body {
     width: 100%;
 }
 
-.content-motoblog-unit-actions span {
+.content-motoblog-unit-actions-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -577,13 +601,39 @@ body {
     border-radius: 5px;
 }
 
-.content-motoblog-unit-actions span:hover {
+.content-motoblog-unit-actions-btn:hover {
     color: rgba(255,255,255, 1);
     background-color: rgba(0,0,0, .3);
 }
 
-.content-motoblog-unit-actions i {
+.content-motoblog-unit-actions-btn i {
     margin: 0 10px 0 0;
+}
+
+.content-motoblog-unit-actions-btn span {
+    margin-left: 10px;
+}
+
+
+
+.content-motorcycles {
+    flex: 0 1 55%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: rgba(255,255,255,.8);
+}
+
+.content-motorcycles div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.content-motorcycles img {
+    height: 120px;
+    overflow: hidden;
 }
 
 
@@ -688,14 +738,14 @@ body {
     margin: 0 auto;
 }
 
-.content-videos-unit-info-name {
+.content-videos-unit-name {
     text-align: center;
     display: block;
     font-size: 23px;
     margin: 5px;
 }
 
-.content-videos-unit-info-actions {
+.content-videos-unit-actions {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -704,23 +754,28 @@ body {
     width: 100%;
 }
 
-.content-videos-unit-info-actions span {
+.content-videos-unit-actions-btn {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 1 1 15%;
+    font-size: 16px;
     margin: 5px;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
 }
 
-.content-videos-unit-info-actions span:hover {
+.content-videos-unit-actions-btn:hover {
     color: rgba(255,255,255, 1);
     background-color: rgba(0,0,0, .3);
 }
 
-.content-videos-unit-info-actions i {
+.content-videos-unit-actions-btn span {
+    margin-left: 10px;
+}
+
+.content-videos-unit-actions-btn i {
     margin: 0 10px 0 0;
 }
 
