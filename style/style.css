@@ -46,8 +46,7 @@ html {
 
 body {
     background-size: cover;
-    background-image: url("../img/background.jpg");
-    background-repeat: no-repeat;
+    background-image: url("../img/background.jpg"), none;
     color: #151517;
     font-family: RobotoRegular;
     height: 100%;
@@ -59,6 +58,8 @@ body {
     justify-content: flex-start;
     overflow: hidden;
 }
+
+
 
 .header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
@@ -98,20 +99,6 @@ body {
     padding: 0;
     margin: 0;
     vertical-align: top;
-}
-
-.header-filter button {
-    border: solid 1px #ffffff;
-    background: transparent;
-    border-radius: 5px;
-    color: #ffffff;
-    width: 55px;
-    height: 25px;
-    margin-right: 5px;
-}
-
-.header-filter button:active {
-    background-color: #1E90FF;
 }
 
 .header-search {
@@ -331,6 +318,32 @@ body {
     width: 55%;
 }
 
+.content-friends-filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.content-friends-filter button {
+    border: solid 1px #ffffff;
+    background: #3f3f3f;
+    border-radius: 5px;
+    color: #ffffff;
+    width: 25%;
+    height: 25px;
+}
+
+.content-friends-filter button:active {
+    background-color: #1E90FF;
+}
+
+.content-friends-filter button span {
+    background-color: #757575;
+    padding: 1px;
+    border-radius: 3px;
+}
+
 .content-friends-unit {
     display: flex;
     flex-direction: row;
@@ -460,7 +473,7 @@ body {
 
 .content-messages-unit-input-area textarea {
     border-radius: 5px;
-    font-family: RobotoRegular;
+    font-family: RobotoRegular, serif;
     color: #3f3f3f;
     flex: 3 1 15%;
 }
@@ -911,6 +924,49 @@ body {
     width: 300px;
     color: #eeeeee;
     margin: 25px auto;
+}
+
+
+
+.content-settings {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255,255,255,.8);
+    width: 55%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content-settings div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 10px;
+}
+
+.content-settings div span {
+    flex: 1 1 35%;
+}
+
+.content-settings div i {
+    font-size: 25px;
+    color: #1E90FF;
+    flex: 1 1 40%;
+}
+
+.content-settings div input {
+    flex: 1 1 15%;
+    background: transparent;
+    border: solid 1px #3F3F3F;
+    border-radius: 50px;
+    padding: 5px;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.content-settings .submit {
+    flex: 1 1 3%;
 }
 
 
