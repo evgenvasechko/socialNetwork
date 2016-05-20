@@ -930,6 +930,39 @@ body {
 
 
 
+.content-memory {
+    background-color: rgba(255,255,255, 0.8);
+    width: 55%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.content-memory-unit {
+    border-bottom: solid 1px #3f3f3f;
+}
+
+.content-memory-unit-header {
+    margin: 10px;
+    font-size: 20px;
+}
+
+.content-memory-unit-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.content-memory-unit-about-photo img{
+    height: 100px;
+}
+
+.content-memory-unit-about-text {
+    margin-left: 10px;
+}
+
+
+
 .content-registration {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px 15px 0 15px;
@@ -1023,6 +1056,10 @@ body {
     padding: 5px;
     color: #000000;
     margin-left: 10px;
+}
+
+.content-settings-photo #avatar{
+    border-style: none;
 }
 
 .content-settings .submit {
