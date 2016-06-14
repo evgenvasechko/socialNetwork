@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style/style.css">
     <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script/script.js" type="text/javascript"></script>
     <title>Profile</title>
 </head>
 
@@ -92,30 +94,44 @@
                         <span class="content-profile-blog-post-actions-btn"><i class="fa fa-thumbs-down" aria-hidden="true"></i>Dislike <span> 2</span></span>
                     </div>
 
-                    <div class="content-profile-blog-post-comment">
-                        <div class="content-profile-blog-post-comment-info">
-                            <p class="content-profile-blog-post-comment-info-author">Maxim Kublitsky</p>
-                            <img class="content-profile-blog-post-comment-info-avatar" src="img/background.jpg" />
-                        </div>
-                        <div class="content-profile-blog-post-comment-text">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Aliquid amet aut, autem beatae blanditiis debitis dicta dolore doloremque itaque laboriosam libero non nostrum provident qui quod suscipit tenetur unde veniam!
+                    <div class="content-profile-blog-post-comments">
+                        <div class="content-profile-blog-post-comments-unit">
+                            <div class="content-profile-blog-post-comments-unit-content">
+                                <div class="content-profile-blog-post-comments-unit-content-info">
+                                    <p class="content-profile-blog-post-comments-unit-content-info-author">Maxim Kublitsky</p>
+                                    <img class="content-profile-blog-post-comments-unit-content-info-avatar" src="img/background.jpg" />
+                                </div>
+                                <div class="content-profile-blog-post-comments-unit-content-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Aliquid amet aut, autem beatae blanditiis debitis dicta dolore doloremque itaque laboriosam libero non nostrum provident qui quod suscipit tenetur unde veniam!
 
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Adipisci assumenda culpa cumque eos exercitationem explicabo harum labore,
-                            libero maiores mollitia omnis quo quos repellendus sapiente, sequi similique sit suscipit veritatis.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Adipisci assumenda culpa cumque eos exercitationem explicabo harum labore,
+                                    libero maiores mollitia omnis quo quos repellendus sapiente, sequi similique sit suscipit veritatis.
 
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Adipisci deleniti dicta dolor dolorem et eveniet explicabo id inventore laboriosam minima molestias nam nesciunt nobis optio quaerat similique,
-                            suscipit. Cumque, est!
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Adipisci deleniti dicta dolor dolorem et eveniet explicabo id inventore laboriosam minima molestias nam nesciunt nobis optio quaerat similique,
+                                    suscipit. Cumque, est!
 
-                            <p class="content-profile-blog-post-comment-info-posted">Posted 20.05.2016 </p>
-
-                            <div class="content-profile-blog-post-comment-actions">
-                                <span class="content-profile-blog-post-comment-actions-btn"><i class="fa fa-reply-all" aria-hidden="true"></i>Reply</span>
-                                <span class="content-profile-blog-post-comment-actions-btn"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Like <span> 1</span></span>
-                                <span class="content-profile-blog-post-comment-actions-btn"><i class="fa fa-thumbs-down" aria-hidden="true"></i>Dislike <span> 0</span></span>
+                                    <p class="content-profile-blog-post-comments-unit-content-info-posted">Posted 20.05.2016 </p>
+                                </div>
                             </div>
+
+                            <div class="content-profile-blog-post-comments-unit-actions">
+                                <span class="content-profile-blog-post-comments-unit-actions-btn"><i class="fa fa-reply-all" aria-hidden="true"></i>Reply</span>
+                                <span class="content-profile-blog-post-comments-unit-actions-btn"><i class="fa fa-thumbs-up" aria-hidden="true"></i>Like <span> 1</span></span>
+                                <span class="content-profile-blog-post-comments-unit-actions-btn"><i class="fa fa-thumbs-down" aria-hidden="true"></i>Dislike <span> 0</span></span>
+                            </div>
+                        </div>
+
+                        <div class="content-profile-blog-post-comments-new">
+                            <textarea name="comment" id="new-comment" cols="30" rows="5"></textarea>
+                            <button>Send comment</button>
+                        </div>
+                        <div class="content-profile-blog-post-comments-hide">
+                            <i class="fa fa-angle-up"></i>
+                            Hide comments
+                            <i class="fa fa-angle-up"></i>
                         </div>
                     </div>
 
